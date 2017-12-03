@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+class student
+{
+  private:
+  int ID;
+  string name;
+  char gender;
+  
+  public:
+  void input();
+  void display();
+  
+};
+void student::input()
+{
+  std::cout << "Enter Name: ";
+  std::cin >> name;
+  std::cout << "Are you male or female: ";
+  std::cin >> gender;
+  std::cout << "Enter Id: ";
+  std::cin >> ID;
+  
+}
+void student::display()
+{
+  std::cout << "\n\n--------------------------------------------------";
+  std::cout << "\n\nStudent name: " << name;
+	std::cout << "\nID: " << ID;
+	std::cout << "\nGender: " << gender;
+}
+int main()
+{
+  student s;
+  s.input();
+  s.display();
+}
