@@ -1,0 +1,32 @@
+sarthak peer review
+---------------------------------
+1. The user interface is rather generic and structure is needed.
+2. Add a pause at the start of the program such as "Welcome player".
+3. Addition of comments to address the section of code
+4. Sarthak could add sections of an mmorpg through class that 
+represent the assortment of gear and weapons.
+5. Code instantiation was well done aswell as the methods.
+
+------------------------------
+Male and female
+name 
+ID
+subjects
+height
+age
+Age group/year
+hobbies
+------------------------------
+
+For me-
+Great interface could be improved
+Word limit on cin input
+Need comments
+Add subjects
+height
+age
+Age group/year
+hobbies
+need inheritance and plymorhpisim and encapsulation
+std::getline (std::cin,age);
+Control structure like if and else
