@@ -1,0 +1,129 @@
+#include <iostream> //Initialization of variables
+#include <string>
+using namespace std;
+
+class student
+{
+  private: // Identifying the data types for the attributes.
+  int ID;
+  string name;
+  string gender;
+  string subject;
+  string subject1;
+  string subject2;
+  string subject3;
+  string surname;
+  int age;
+  int year_group;
+  int height;
+    
+  public:
+  int getID()
+  {
+    return ID;
+  }
+    void setID(int i)
+    {
+      ID = i;
+    }
+    string getsubject()
+    {
+      return subject;
+    }
+      void setsubject(string s)
+      {
+        subject = s;
+      }
+      int getyear_group()
+      {
+        return year_group;
+      }
+        void setyear_group(int y)
+        {
+          year_group = y;
+        }
+  
+        void input();
+        void display();
+  
+};
+class year
+{
+  private:
+  int year_group;
+  
+  public:
+  int getyear_group()
+  {
+    return year_group;
+  }
+    void setyear_group(int y)
+    {
+      year_group = y;
+    }
+  
+};
+
+
+//class hsc: public student
+//{
+//  string getHSC()
+//    {
+//      return HSC;
+//    }
+//      void setHSC(string h)
+//      {
+//        HSC=h;
+//      }
+//};
+
+void student::input()
+{
+  std::cout << "--------------------------------- GRC Oatley Student Listing -------------------------------";
+  std::cout << "\n\nEnter Your First Name: ";
+  std::cin >> name;
+  std::cout << "Enter Your Surname: ";
+  std::cin >> surname;
+  std::cout << "Are You Male or Female: ";
+  std::cin >> gender;
+  std::cout << "Enter Desired Id: ";
+  std::cin >> ID;
+  std::cout << "Enter Your Age: ";
+  std::cin >> age;
+  std::cout << "\n--------------------------------- Student Subject Selecetion -------------------------------";
+  
+  std::cout << "\n\nEnter Your First Desired Subject : ";
+  std::cin >> subject;
+  std::cout << "\nEnter Your Second Desired Subject : ";
+  std::cin >> subject1;
+  std::cout << "\nEnter Your Third Desired Subject : ";
+  std::cin >> subject2;
+  std::cout << "\nEnter Your Forth Desired Subject : ";
+  std::cin >> subject3;
+}
+void student::display()
+{
+  std::cout << "\n\n\n\n\n\n\n\n\n----------------------------------Your Student ID-------------------------------------------";
+  std::cout << "\n\nStudent name: " << name + " " +surname;
+	std::cout << "\nID: " << ID;
+	std::cout << "\nGender: " << gender;
+	std::cout << "\nAged: " << age;
+	std::cout << "\n\nChosen subjects:";
+	std::cout << "\n--------------------------------------------------------------------------------------------";
+	std::cout << "\n-"+subject+"\n\t-"+subject1+"\n\t\t-"+subject2+"\n\t\t\t-"+subject3;
+}
+
+int main()
+{
+  student C;
+  C.input();
+  C.display();
+  
+  year Y;
+  Y.setyear_group(12);
+  std::cout << "\n--------------------------------------------------------------------------------------------";
+  std::cout << "\n\nCongratulations! You'll be starting school as a year " << Y.getyear_group() << " student.";
+  
+  //hsc L;
+  
+};
