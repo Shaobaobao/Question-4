@@ -1,0 +1,7 @@
+http://www.cplusplus.com/forum/beginner/88994/
+https://www.tutorialcup.com/cplusplus/inheritance.htm
+https://repl.it/repls/EverlastingReasonableDogfish
+http://www.zeuscmd.com/tutorials/cplusplus/50-GettersAndSetters.php
+https://repl.it/repls/FrequentSandyTern
+https://repl.it/repls/HealthyRespectfulLungfish
+
